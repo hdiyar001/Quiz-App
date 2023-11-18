@@ -1,0 +1,18 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    background-color:transparent;
+    width: 700px;
+    align-items: center;
+}
+
+.image{
+    height: 60px;
+}
+
+.Headertitle{
+    letter-spacing: 6px;
+    font-size: 40px;
+    color: #ebe7ef;
+}
+
