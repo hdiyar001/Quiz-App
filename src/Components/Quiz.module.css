@@ -1,0 +1,16 @@
+.quiz_container {
+    background-color: #29143f;
+    border: 1px solid #36155e;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px #36155e;
+    padding: 10px;
+    text-align: center;
+    width: 60%;
+
+}
+
+h2 {
+    text-align: center;
+    color: #c8c0c3;
+    font-size: 18px;
+}

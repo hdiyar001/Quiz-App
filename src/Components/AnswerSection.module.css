@@ -1,0 +1,29 @@
+.answer_section {
+    background-color: #8db1fe;
+    color: black;
+    border: solid #8db1fe;
+    height: 45px;
+    border-radius: 30px;
+    margin-top: 8px;
+    margin: 8px 45px
+}
+
+p {
+    font-size: 14px;
+}
+
+progress {
+    width: 30%;
+    height: 5px;
+    border-radius: 30px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 30px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #8149bd;
+    border-radius: 20px;
+}
