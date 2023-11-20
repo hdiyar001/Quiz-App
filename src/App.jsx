@@ -1,15 +1,20 @@
 import { Quiz } from "./Components/Quiz";
 import Header from "./Components/Header";
 import styles from "./Appstyle.module.css";
+import ArrayContext from "./Ressources/questionArray-context";
+import { useContext } from "react";
 
-function App() {
+function App(props) {
+  const ctx = useContext(ArrayContext);
+
     return (
-        <>
+
             <div className={styles.App}>
                 <Header></Header>
-                <Quiz />
+                
+                <Quiz question = {ctx.questionArray[1]}  />
             </div>
-        </>
+        
     );
 }
 
