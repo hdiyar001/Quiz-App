@@ -1,9 +1,9 @@
 import styles from './AnswerSection.module.css';
-export function AnswerSection() {
+export function AnswerSection({ answer }) {
     return (
         <>
             <div className={styles.answer_section}>
-                <p>By using the loop() method to iterate over an array of data and returning JSX.</p>
+                <p>{answer.text}</p>
             </div>
         </>
     )
