@@ -1,11 +1,20 @@
 .answer_section {
-    background-color: #8db1fe;
+   
     color: black;
-    border: solid #8db1fe;
+    border: none;
     height: 45px;
     border-radius: 30px;
     margin-top: 8px;
-    margin: 8px 45px
+    margin: 8px 45px;
+    padding: 5px 0px;
+}
+
+.answer_section:hover {
+  
+}
+
+.answer_section:active {
+ 
 }
 
 p {
