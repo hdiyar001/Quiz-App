@@ -1,12 +1,25 @@
 import styles from "./AnswerSection.module.css";
-import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-export function AnswerSection(props) {
- 
 
-  const StyledDiv = styled.div`
-    background-color: ${props.Color};
+export function AnswerSection(props) {
+  function redirectOnclickHandler() {
+    props.handleOnlick(props.id);
+  }
+
+  return (
+    <StyledDiv
+      bgcolor={props.Color}
+      className={styles.answer_section}
+      onClick={redirectOnclickHandler}
+    >
+      <p>{props.answer.text}</p>
+    </StyledDiv>
+  );
+}
+
+const StyledDiv = styled.div`
+    background-color: ${props => props.bgcolor};
     cursor: pointer;
     color: black;
     border: none;
@@ -30,16 +43,3 @@ export function AnswerSection(props) {
       font-size: 14px;
     }
   `;
-
-  function redirectOnclickHandler() {
-    props.handleOnlick();
-  }
-  return (
-    <StyledDiv
-      className={styles.answer_section}
-      onClick={redirectOnclickHandler}
-    >
-      <p>{props.answer.text}</p>
-    </StyledDiv>
-  );
-}
