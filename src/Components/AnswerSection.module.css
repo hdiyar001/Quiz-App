@@ -1,22 +1,4 @@
-.answer_section {
+
    
-    color: black;
-    border: none;
-    height: 45px;
-    border-radius: 30px;
-    margin-top: 8px;
-    margin: 8px 45px;
-    padding: 5px 0px;
-}
 
-.answer_section:hover {
-  
-}
 
-.answer_section:active {
- 
-}
-
-p {
-    font-size: 14px;
-}
